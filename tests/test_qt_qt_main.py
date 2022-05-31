@@ -17,7 +17,7 @@ YAML_PATH = os.path.join(os.path.dirname(__file__), "test_yaml")
         ("qtqtmain_opencv_before_meta.yaml", "qtqtmain_opencv_after_meta.yaml"),
     ],
 )
-def test_matplotlib_base(old_meta, new_meta, tmpdir):
+def test_qtmain(old_meta, new_meta, tmpdir):
     with open(os.path.join(YAML_PATH, old_meta)) as fp:
         in_yaml = fp.read()
 
