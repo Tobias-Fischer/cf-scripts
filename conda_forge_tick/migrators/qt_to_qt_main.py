@@ -12,6 +12,8 @@ def _parse_qt(lines):
 
 
 class QtQtMainMigrator(MiniMigrator):
+    migrator_version = 0
+
     def filter(self, attrs, not_bad_str_start=""):
         host_req = (attrs.get("requirements", {}) or {}).get("host", set()) or set()
         return "qt" in host_req
